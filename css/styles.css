@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+
+/* Variables */
+
+:root {
+    --primary: #ffc636;
+    --secondary: #0a0b5b;
+    --light-gray: #f2f2f2;
+    --rubik: "Rubik", sans-serif;
+}
+
+
+/* Reset default browser styling */
+
+body,
+p,
+a,
+ul,
+ul {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none;
+}
+
+
+/* Base styles */
+
+body {
+    background: var(--secondary);
+    overflow-x: hidden;
+    font-family: var(--rubik);
+}
+
+.button {
+    background: none;
+    border: 2px solid var(--primary);
+    color: var(--primary);
+    padding: 6px 12px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.6);
+    /* inline-block-To enable us add styling, box model is only applied to block element */
+    display: inline-block;
+}
+
+.button:hover {
+    color: #222;
+    background: var(--primary);
+}
+
+input,
+textarea {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 10px 16px;
+    border-radius: 20px;
+    border: 2px solid #9893d8;
+    color: var(--light-gray);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #dddbff;
+    font-weight: normal;
+}
+
+p,
+a,
+li {
+    color: #9893d8;
+}
+
+h1,
+h3 {
+    font-size: 1.2em;
+}
+
+h2 {
+    font-size: 1.6em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+.leading {
+    font-size: 1.1em;
+}
+
+
+/* Mobile styles */
+
+
+/* small tablet styles */
+
+@media screen and (min-width: 620px) {
+    body {
+        /* font-size will be 1.2em x 18 */
+        font-size: 18px;
+    }
+}
+
+
+/* Large tablets & laptop styles */
+
+@media screen and (min-width: 960px) {
+    body {
+        /* font-size will be 1.2em x 18 */
+        font-size: 18px;
+    }
+}
+
+
+/* Desktop styles */
+
+@media screen and (min-width: 1200px) {
+    body {
+        /* font-size will be 1.2em x 18 */
+        font-size: 20px;
+    }
+}
